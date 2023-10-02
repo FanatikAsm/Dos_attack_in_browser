@@ -25,9 +25,9 @@ Elements in beautiful READMEs include, but are not limited to: images, screensho
 Mini DOS attack in browser.
 <br /> Download all site's information in iframe element. If site has meta origins it will be blocked.
 <br /> Site protection blocking your page. User can't delet it. Only reset browser data can help you.
-- 💼 Simulation of a DOS attack right in the browser.
-- 👨‍💻 Page blocking protection for 30 seconds.
-- 🛫 Registration checks.
+- 💣 Simulation of a DOS attack right in the browser.
+- 🛡️ Page blocking protection for 30 seconds.
+- 🪪 Registration checks.
 
 ![The long journey from experimentation to production.](/docs/book/.gitbook/assets/intro-zenml-overview.png)
 
