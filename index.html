@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>Document</title>
 </head>
 <body>
@@ -1144,11 +1145,11 @@ document.onclick=e=>{
         if(document.getElementById('domain').value != ''){
 		document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
         
-	        document.getElementById('iframe').onload = function() { 
+	        //document.getElementById('iframe').onload = function() { 
 		     var countDos = 0;
 		     var timerDos=setInterval(function(){
 			if( countDos == 10 ){
-			     clearInteral(timerDos);
+			     clearInterval(timerDos);
 			}else{
 			     document.getElementById('iframe').remove();	
 			     countDos++;
@@ -1156,7 +1157,7 @@ document.onclick=e=>{
 			     document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
 			}     
 		     },2000);
-       		}
+       		//}
 	}    
     }else if( e.target.className == 'cont_slider_block_num' ){
         timer(e.target.getAttribute('data-id'));
