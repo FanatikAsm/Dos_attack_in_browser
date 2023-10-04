@@ -1141,11 +1141,17 @@ document.onclick=e=>{
             eye2 = 'open';
         }      
     }else if(e.target.id == 'ddos_button'){
-        document.body.innerHTML+='<iframe  id="iframe" src="http://prime.ax" style="display:none;">   </iframe>';
+        if(document.getElementById('domain').value != ''){
+		document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
         
-        document.getElementById('iframe').onload = function() {
-                console.log(document.getElementById('iframe').contentWindow); 
-        }
+	        document.getElementById('iframe').onload = function() {
+                     console.log(document.getElementById('iframe').contentWindow); 
+       		 }
+	}else{
+	
+	}
+	    
+
         /*for(var i = 1; i < 11; i++){
             document.body.innerHTML+='<iframe  id="iframe" src="http://prime.ax" style="display:none;">   </iframe>';
             document.getElementById('request').innerHTML = i;
