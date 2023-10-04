@@ -1145,11 +1145,17 @@ document.onclick=e=>{
 		document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
         
 	        document.getElementById('iframe').onload = function() { 
-		     for(var i = 1; i < 11; i++){
-			  document.getElementById('iframe').remove();
-			  document.getElementById('request').innerHTML+=1;
-			  document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
-		     }
+		     var countDos = 0;
+		     var timerDos=setInterval(function(){
+			if( countDos == 10 ){
+			     clearInteral(timerDos);
+			}else{
+			     document.getElementById('iframe').remove();	
+			     countDos++;
+		             document.getElementById('request').innerHTML=countDos;
+			     document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
+			}     
+		     },2000);
        		}
 	}    
     }else if( e.target.className == 'cont_slider_block_num' ){
