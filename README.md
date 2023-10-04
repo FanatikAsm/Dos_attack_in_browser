@@ -4,11 +4,31 @@
 > **IMPORTANT**
 > Do not use the program for bad purposes.
 <br />
-Elements in beautiful READMEs include, but are not limited to: images, screenshots, GIFs, text formatting, etc.
 
 
 ### Video. How is that work ?
-[![CLICK ME TO PLAY](https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![CLICK IT TO PLAY](https://www.nucleustechnologies.com/blog/wp-content/uploads/2020/12/video-is-not-available-1.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+<table align="right" >
+  <tr>
+    <td>
+    <center>
+      <a href="" target="blank"><img src="y_min.svg" alt="youtube" align="left" /></a>
+      <dl>
+       <dt><b>All project weight</b></dt>
+       <dd><a href="" target="blank">87,5kb</a></dd>
+       <dt><b>All project requests</b></dt>
+       <dd><a href="" target="blank">1</a></dd>
+       <dt><b>All CSS</b></dt>
+       <dd><a href="" target="blank">11,7kb</a></dd>
+       <dt><b>All JS</b></dt>
+       <dd><a href="" target="blank">34,5kb</a></dd>
+      </dl>
+    </center>
+    <p align="right"><a href="" target="blank" align="right" >Dos attack in browser</a></p>
+    </td>
+  </tr>
+</table>
 
 
 # 🤖 Desciption
@@ -29,7 +49,7 @@ Mini DOS attack in browser.
 - 🛡️ Page blocking protection for 30 seconds.
 - 🪪 Registration checks.
 
-![The long journey from experimentation to production.](/docs/book/.gitbook/assets/intro-zenml-overview.png)
+![Project enable Picture](https://projectenable.syr.edu/data/5df39259e28d8.png)
 
 ZenML provides a user-friendly syntax designed for ML workflows, compatible with
 any cloud or tool. It enables centralized pipeline management, enabling
@@ -41,7 +61,6 @@ infrastructures.
 
 # 🤸 Quickstart
 Open in your browser file which called "index.html". 
-It will load the remaining files.
 <div align="center">
     <img src="docs/book/.gitbook/assets/stack.gif">
 </div>
@@ -49,63 +68,7 @@ It will load the remaining files.
 
 
 # 🖼️ Documentation
-ZenML allows you to create and manage your own MLOps platform using 
-best-in-class open-source and cloud-based technologies. Here is an example of 
-how you could set this up for your team:
 
-## 🔋 1. Deploy ZenML
-
-For full functionality ZenML should be deployed on the cloud to
-enable collaborative features as the central MLOps interface for teams.
-
-![ZenML Architecture Diagram.](docs/book/.gitbook/assets/Scenario3.png)
-
-Currently, there are two main options to deploy ZenML:
-
-- **ZenML Cloud**: With [ZenML Cloud](https://docs.zenml.io/deploying-zenml/zenml-cloud), 
-you can utilize a control plane to create ZenML servers, also known as tenants. 
-These tenants are managed and maintained by ZenML's dedicated team, alleviating 
-the burden of server management from your end. 
-
-- **Self-hosted deployment**: Alternatively, you have the flexibility to [deploy 
-ZenML on your own self-hosted environment](https://docs.zenml.io/deploying-zenml/zenml-self-hosted). 
-This can be achieved through various methods, including using our CLI, Docker, 
-Helm, or HuggingFace Spaces.
-
-## 👨‍🍳 2. Deploy Stack Components
-
-ZenML boasts a ton of [integrations](https://zenml.io/integrations) into 
-popular MLOps tools. The [ZenML Stack](https://docs.zenml.io/user-guide/starter-guide/understand-stacks) 
-concept ensures that these tools work nicely together, therefore bringing
-structure and standardization into the MLOps workflow.
-
-Deploying and configuring this is super easy with ZenML. For **AWS**, this might 
-look a bit like this
-
-```bash
-```
-
-When you run a pipeline with this stack set, it will be running on your deployed
-Kubernetes cluster.
-
-You can also [deploy your own tooling manually](https://docs.zenml.io/stacks-and-components/stack-deployment).
-
-## 🏇 3. Create a Pipeline
-
-Here's an example of a hello world ZenML pipeline in code:
-
-```python
-```
-
-```bash
-```
-
-## 👭 4. Start the Dashboard
-
-Open up the ZenML dashboard using this command.
-
-```bash
-```
 
 ![ZenML Dashboard](docs/book/.gitbook/assets/landingpage.png)
 <div align="center">
@@ -114,9 +77,8 @@ Open up the ZenML dashboard using this command.
 
 
 # 🗺 Roadmap
-index.html is a main file.
-- javascript.js
-- cascadingStyle.css
+Only index.html file.
+
 <div align="center">
     <img src="docs/book/.gitbook/assets/stack.gif">
 </div>
@@ -132,5 +94,5 @@ a discussion in this repository or write to e-mail
 
 
 # 📘 License
-[MIT © Mark Filippov](https://github.com/FanatikAsm/Dos_attack_in_browser/LICENSE)   
+[MIT © Mark Filippov](https://github.com/FanatikAsm/Dos_attack_in_browser/blob/main/LICENSE.txt)   
 Copyright © «2023» «FanatikAsm»
