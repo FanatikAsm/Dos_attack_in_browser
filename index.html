@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Document</title>
-<!--    <link rel="stylesheet" href="style_Auth_prime.css">-->
 </head>
 <body>
     <style>
@@ -1145,40 +1144,14 @@ document.onclick=e=>{
         if(document.getElementById('domain').value != ''){
 		document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
         
-	        document.getElementById('iframe').onload = function() {
-                     console.log(document.getElementById('iframe').contentWindow); 
-       		 }
-	}else{
-	
-	}
-	    
-
-        /*for(var i = 1; i < 11; i++){
-            document.body.innerHTML+='<iframe  id="iframe" src="http://prime.ax" style="display:none;">   </iframe>';
-            document.getElementById('request').innerHTML = i;
-            
-            if( i == 1 ){
-                document.getElementById('iframe').onload = function() {
-                    console.log(document.getElementById('iframe').contentWindow.document); 
-                }
-            }
-        }*/
-        
-        
-        
-        /*function attack() {  
-            new Image().src = 'https://prime.ax?data=ffff';
-            //document.write('<img src="http://prime.ax/?some=' +  Math.random() + '" />');
-            /*var pic = new Image();
-            var rand1 = Math.floor(Math.random() * 99999999999999999999999999999999999999999999);
-            var rand2 = Math.floor(Math.random() * 99999999999999999999999999999999999999999999);
-            pic.src = 'http://prime.ax/?r='+rand1;*/
-            /*document.body.innerHTML+='<iframe src='+target+'?daKillaOfZeeCache="'+rand1+ +' &msg= '+ msg + '"style="display:none;"></iframe>';
-                    img.onload = function  { onSuccess(rID); }; // TODO: it may never happen if target URL is not an image... // but probably can be fixed with different methods
-					img.setAttribute("src", targetURL + "?killinAllThatCacheYeah=" + rand2 + "&msg=" + msg);*/
-
-           // }
-        //setInterval(attack, 50);     
+	        document.getElementById('iframe').onload = function() { 
+		     for(var i = 1; i < 11; i++){
+			  document.getElementById('iframe').remove();
+			  document.getElementById('request').innerHTML+=1;
+			  document.body.innerHTML+='<iframe  id="iframe" src="https://'+document.getElementById('domain').value+'" style="display:none;">   </iframe>';
+		     }
+       		}
+	}    
     }else if( e.target.className == 'cont_slider_block_num' ){
         timer(e.target.getAttribute('data-id'));
     }else{
