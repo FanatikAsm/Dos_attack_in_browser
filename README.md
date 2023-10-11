@@ -13,7 +13,6 @@
   <tr>
     <td>
     <center>
-      <a href="" target="blank"><img src="y_min.svg" alt="youtube" align="left" /></a>
       <dl>
        <dt><b>All project weight</b></dt>
        <dd><a href="" target="blank">87,5kb</a></dd>
